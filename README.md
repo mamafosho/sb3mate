@@ -2,7 +2,7 @@
 
 **[https://sb3mate-ten.vercel.app/](https://sb3mate-ten.vercel.app/)**
 
-## ✨ Features
+## Features
 * **Ableton Live**: Converts `.fst` to compressed `.adg`.
 * **Logic Pro**: Converts `.fst` to Base64-encoded `.aupreset`.
 
