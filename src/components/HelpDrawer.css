@@ -1,0 +1,59 @@
+/* src/components/HelpDrawer.css */
+
+/* 배경 오버레이 (바깥쪽 클릭 시 닫히는 영역) */
+.drawer-overlay {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(2px);
+  z-index: 999998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.drawer-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 서랍장 패널 본체 */
+.help-drawer {
+  position: fixed;
+  top: 0;
+  right: -450px; /* 기본 상태: 화면 오른쪽 밖으로 450px 숨김 */
+  width: 400px;
+  max-width: 90vw;
+  height: 100vh;
+  background-color: #1a1c24;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.8);
+  z-index: 999999;
+  transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* 부드러운 감속 효과 */
+  padding: 30px 20px;
+  overflow-y: auto;
+}
+
+/* 서랍장이 열렸을 때 화면 안으로 밀고 들어옴 */
+.help-drawer.open {
+  right: 0; 
+}
+
+/* 닫기(X) 버튼 */
+.close-btn {
+  background: none;
+  border: none;
+  color: #A0A0A0;
+  font-size: 28px;
+  cursor: pointer;
+  float: right;
+  margin-top: -10px;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.close-btn:hover {
+  color: #FF4B4B;
+}
