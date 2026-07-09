@@ -22,7 +22,20 @@
     <meta name="twitter:title" content="ShaperBox 3 Preset Converter (sb3mate)" />
     <meta name="twitter:description" content="Convert FL Studio ShaperBox 3 presets (.fst) to Ableton Live (.adg) and Logic Pro (.aupreset)." />
     <meta name="twitter:image" content="https://sb3mate-ten.vercel.app/og-image.png" />
-   </head>
+   
+    <!-- 구글 상단에 Vercel 대신 SB3Mate가 뜨도록 강제하는 스크립트 -->
+    <script type="application/ld+json">
+     {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "SB3Mate",
+      "alternateName": "sb3mate",
+      "url": "https://sb3mate-ten.vercel.app/",
+      "logo": "https://sb3mate-ten.vercel.app/logo.png"
+     }
+    </script>
+  
+    </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
