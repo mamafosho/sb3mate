@@ -1,6 +1,6 @@
 # ShaperBox 3 Preset Converter (sb3mate)
 
-**[https://sb3mate-ten.vercel.app/](https://sb3mate-ten.vercel.app/)**
+**[https://sb3mate.vercel.app/](https://sb3mate.vercel.app/)**
 
 ## Features
 * **Ableton Live**: Converts `.fst` to compressed `.adg`.
